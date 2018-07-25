@@ -1,0 +1,59 @@
+<style>
+body {
+    background-color: grey;
+}
+</style>
+<div class="topbar">
+  <div class="container">
+    <div class="vertical-center">
+      <%=link_to "FindMe",root_path  %> > <%=@listing.title %>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div>
+    <!-- <button type="button">reply</button> -->
+    <style>
+body {
+    background-color: grey;
+}
+</style>
+    posted <%= time_ago_in_words(@listing.created_at) %>
+    <h1 class="listing-header"><%= @listing.title %></h1>
+    
+      <% if @listing.user = current_user %>
+      <div class="box">
+          <p><%= link_to 'Edit', edit_listing_path %></p>
+      <%#<%= link_to 'Delete', delete_listing_path :::::
+      cannot do this becaude delete has no path so we want to show which post u wanna delete and say methd also because delete always needs method %>
+          <p><%= link_to 'Delete', @listing, data: {confirm:"Are you sure you want to delete this listing?"}, method: :delete %></p>
+        <%else%>
+        <%end %>
+    </div>
+    <p> <%= @listing.description %></p>
+    
+  </div>
+  <footer>
+    <p>post id: <%= @listing.id%></p> <%# list is post %>
+   <%# posted <%=@listing.created_at%>
+   <p>posted at: <%= time_ago_in_words(@listing.created_at) %> ago</p>
+
+
+
+  
+
+
+
+  </footer>
+</div>
+
+<br>
+<% if @listing.user = current_user %>
+  <strong>Add a comment</strong>
+<% end %>
+<%= render 'comments/form' %> <br>
+<h3><%= @listing.comments.count %> comments </h3> <br>
+<%= render @listing.comments %> 
+
+
+

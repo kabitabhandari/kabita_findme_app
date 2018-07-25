@@ -1,0 +1,1203 @@
+/*
+  960 Grid System ~ Core CSS.
+  Learn more ~ http://960.gs/
+
+  Licensed under GPL and MIT.
+*/
+
+/*
+  Forces backgrounds to span full width,
+  even if there is horizontal scrolling.
+  Increase this if your layout is wider.
+
+  Note: IE6 works fine without this fix.
+*/
+
+
+body {
+  min-width: 960px;
+}
+
+/* `Container
+----------------------------------------------------------------------------------------------------*/
+
+.container_24 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
+}
+
+/* `Grid >> Global
+----------------------------------------------------------------------------------------------------*/
+
+.grid_1,
+.grid_2,
+.grid_3,
+.grid_4,
+.grid_5,
+.grid_6,
+.grid_7,
+.grid_8,
+.grid_9,
+.grid_10,
+.grid_11,
+.grid_12,
+.grid_13,
+.grid_14,
+.grid_15,
+.grid_16,
+.grid_17,
+.grid_18,
+.grid_19,
+.grid_20,
+.grid_21,
+.grid_22,
+.grid_23,
+.grid_24 {
+  display: inline;
+  float: left;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.push_1, .pull_1,
+.push_2, .pull_2,
+.push_3, .pull_3,
+.push_4, .pull_4,
+.push_5, .pull_5,
+.push_6, .pull_6,
+.push_7, .pull_7,
+.push_8, .pull_8,
+.push_9, .pull_9,
+.push_10, .pull_10,
+.push_11, .pull_11,
+.push_12, .pull_12,
+.push_13, .pull_13,
+.push_14, .pull_14,
+.push_15, .pull_15,
+.push_16, .pull_16,
+.push_17, .pull_17,
+.push_18, .pull_18,
+.push_19, .pull_19,
+.push_20, .pull_20,
+.push_21, .pull_21,
+.push_22, .pull_22,
+.push_23, .pull_23 {
+  position: relative;
+}
+
+/* `Grid >> Children (Alpha ~ First, Omega ~ Last)
+----------------------------------------------------------------------------------------------------*/
+
+.alpha {
+  margin-left: 0;
+}
+
+.omega {
+  margin-right: 0;
+}
+
+/* `Grid >> 24 Columns
+----------------------------------------------------------------------------------------------------*/
+
+.container_24 .grid_1 {
+  width: 30px;
+}
+
+.container_24 .grid_2 {
+  width: 70px;
+}
+
+.container_24 .grid_3 {
+  width: 110px;
+}
+
+.container_24 .grid_4 {
+  width: 150px;
+}
+
+.container_24 .grid_5 {
+  width: 190px;
+}
+
+.container_24 .grid_6 {
+  width: 230px;
+}
+
+.container_24 .grid_7 {
+  width: 270px;
+}
+
+.container_24 .grid_8 {
+  width: 310px;
+}
+
+.container_24 .grid_9 {
+  width: 350px;
+}
+
+.container_24 .grid_10 {
+  width: 390px;
+}
+
+.container_24 .grid_11 {
+  width: 430px;
+}
+
+.container_24 .grid_12 {
+  width: 470px;
+}
+
+.container_24 .grid_13 {
+  width: 510px;
+}
+
+.container_24 .grid_14 {
+  width: 550px;
+}
+
+.container_24 .grid_15 {
+  width: 590px;
+}
+
+.container_24 .grid_16 {
+  width: 630px;
+}
+
+.container_24 .grid_17 {
+  width: 670px;
+}
+
+.container_24 .grid_18 {
+  width: 710px;
+}
+
+.container_24 .grid_19 {
+  width: 750px;
+}
+
+.container_24 .grid_20 {
+  width: 790px;
+}
+
+.container_24 .grid_21 {
+  width: 830px;
+}
+
+.container_24 .grid_22 {
+  width: 870px;
+}
+
+.container_24 .grid_23 {
+  width: 910px;
+}
+
+.container_24 .grid_24 {
+  width: 950px;
+}
+
+/* `Prefix Extra Space >> 24 Columns
+----------------------------------------------------------------------------------------------------*/
+
+.container_24 .prefix_1 {
+  padding-left: 40px;
+}
+
+.container_24 .prefix_2 {
+  padding-left: 80px;
+}
+
+.container_24 .prefix_3 {
+  padding-left: 120px;
+}
+
+.container_24 .prefix_4 {
+  padding-left: 160px;
+}
+
+.container_24 .prefix_5 {
+  padding-left: 200px;
+}
+
+.container_24 .prefix_6 {
+  padding-left: 240px;
+}
+
+.container_24 .prefix_7 {
+  padding-left: 280px;
+}
+
+.container_24 .prefix_8 {
+  padding-left: 320px;
+}
+
+.container_24 .prefix_9 {
+  padding-left: 360px;
+}
+
+.container_24 .prefix_10 {
+  padding-left: 400px;
+}
+
+.container_24 .prefix_11 {
+  padding-left: 440px;
+}
+
+.container_24 .prefix_12 {
+  padding-left: 480px;
+}
+
+.container_24 .prefix_13 {
+  padding-left: 520px;
+}
+
+.container_24 .prefix_14 {
+  padding-left: 560px;
+}
+
+.container_24 .prefix_15 {
+  padding-left: 600px;
+}
+
+.container_24 .prefix_16 {
+  padding-left: 640px;
+}
+
+.container_24 .prefix_17 {
+  padding-left: 680px;
+}
+
+.container_24 .prefix_18 {
+  padding-left: 720px;
+}
+
+.container_24 .prefix_19 {
+  padding-left: 760px;
+}
+
+.container_24 .prefix_20 {
+  padding-left: 800px;
+}
+
+.container_24 .prefix_21 {
+  padding-left: 840px;
+}
+
+.container_24 .prefix_22 {
+  padding-left: 880px;
+}
+
+.container_24 .prefix_23 {
+  padding-left: 920px;
+}
+
+/* `Suffix Extra Space >> 24 Columns
+----------------------------------------------------------------------------------------------------*/
+
+.container_24 .suffix_1 {
+  padding-right: 40px;
+}
+
+.container_24 .suffix_2 {
+  padding-right: 80px;
+}
+
+.container_24 .suffix_3 {
+  padding-right: 120px;
+}
+
+.container_24 .suffix_4 {
+  padding-right: 160px;
+}
+
+.container_24 .suffix_5 {
+  padding-right: 200px;
+}
+
+.container_24 .suffix_6 {
+  padding-right: 240px;
+}
+
+.container_24 .suffix_7 {
+  padding-right: 280px;
+}
+
+.container_24 .suffix_8 {
+  padding-right: 320px;
+}
+
+.container_24 .suffix_9 {
+  padding-right: 360px;
+}
+
+.container_24 .suffix_10 {
+  padding-right: 400px;
+}
+
+.container_24 .suffix_11 {
+  padding-right: 440px;
+}
+
+.container_24 .suffix_12 {
+  padding-right: 480px;
+}
+
+.container_24 .suffix_13 {
+  padding-right: 520px;
+}
+
+.container_24 .suffix_14 {
+  padding-right: 560px;
+}
+
+.container_24 .suffix_15 {
+  padding-right: 600px;
+}
+
+.container_24 .suffix_16 {
+  padding-right: 640px;
+}
+
+.container_24 .suffix_17 {
+  padding-right: 680px;
+}
+
+.container_24 .suffix_18 {
+  padding-right: 720px;
+}
+
+.container_24 .suffix_19 {
+  padding-right: 760px;
+}
+
+.container_24 .suffix_20 {
+  padding-right: 800px;
+}
+
+.container_24 .suffix_21 {
+  padding-right: 840px;
+}
+
+.container_24 .suffix_22 {
+  padding-right: 880px;
+}
+
+.container_24 .suffix_23 {
+  padding-right: 920px;
+}
+
+/* `Push Space >> 24 Columns
+----------------------------------------------------------------------------------------------------*/
+
+.container_24 .push_1 {
+  left: 40px;
+}
+
+.container_24 .push_2 {
+  left: 80px;
+}
+
+.container_24 .push_3 {
+  left: 120px;
+}
+
+.container_24 .push_4 {
+  left: 160px;
+}
+
+.container_24 .push_5 {
+  left: 200px;
+}
+
+.container_24 .push_6 {
+  left: 240px;
+}
+
+.container_24 .push_7 {
+  left: 280px;
+}
+
+.container_24 .push_8 {
+  left: 320px;
+}
+
+.container_24 .push_9 {
+  left: 360px;
+}
+
+.container_24 .push_10 {
+  left: 400px;
+}
+
+.container_24 .push_11 {
+  left: 440px;
+}
+
+.container_24 .push_12 {
+  left: 480px;
+}
+
+.container_24 .push_13 {
+  left: 520px;
+}
+
+.container_24 .push_14 {
+  left: 560px;
+}
+
+.container_24 .push_15 {
+  left: 600px;
+}
+
+.container_24 .push_16 {
+  left: 640px;
+}
+
+.container_24 .push_17 {
+  left: 680px;
+}
+
+.container_24 .push_18 {
+  left: 720px;
+}
+
+.container_24 .push_19 {
+  left: 760px;
+}
+
+.container_24 .push_20 {
+  left: 800px;
+}
+
+.container_24 .push_21 {
+  left: 840px;
+}
+
+.container_24 .push_22 {
+  left: 880px;
+}
+
+.container_24 .push_23 {
+  left: 920px;
+}
+
+/* `Pull Space >> 24 Columns
+----------------------------------------------------------------------------------------------------*/
+
+.container_24 .pull_1 {
+  left: -40px;
+}
+
+.container_24 .pull_2 {
+  left: -80px;
+}
+
+.container_24 .pull_3 {
+  left: -120px;
+}
+
+.container_24 .pull_4 {
+  left: -160px;
+}
+
+.container_24 .pull_5 {
+  left: -200px;
+}
+
+.container_24 .pull_6 {
+  left: -240px;
+}
+
+.container_24 .pull_7 {
+  left: -280px;
+}
+
+.container_24 .pull_8 {
+  left: -320px;
+}
+
+.container_24 .pull_9 {
+  left: -360px;
+}
+
+.container_24 .pull_10 {
+  left: -400px;
+}
+
+.container_24 .pull_11 {
+  left: -440px;
+}
+
+.container_24 .pull_12 {
+  left: -480px;
+}
+
+.container_24 .pull_13 {
+  left: -520px;
+}
+
+.container_24 .pull_14 {
+  left: -560px;
+}
+
+.container_24 .pull_15 {
+  left: -600px;
+}
+
+.container_24 .pull_16 {
+  left: -640px;
+}
+
+.container_24 .pull_17 {
+  left: -680px;
+}
+
+.container_24 .pull_18 {
+  left: -720px;
+}
+
+.container_24 .pull_19 {
+  left: -760px;
+}
+
+.container_24 .pull_20 {
+  left: -800px;
+}
+
+.container_24 .pull_21 {
+  left: -840px;
+}
+
+.container_24 .pull_22 {
+  left: -880px;
+}
+
+.container_24 .pull_23 {
+  left: -920px;
+}
+
+/* `Clear Floated Elements
+----------------------------------------------------------------------------------------------------*/
+
+/* http://sonspring.com/journal/clearing-floats */
+
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+/* http://www.yuiblog.com/blog/2010/09/27/clearfix-reloaded-overflowhidden-demystified */
+
+.clearfix:before,
+.clearfix:after,
+.container_24:before,
+.container_24:after {
+  content: '.';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  font-size: 0;
+  line-height: 0;
+  width: 0;
+  height: 0;
+}
+
+.clearfix:after,
+.container_24:after {
+  clear: both;
+}
+
+/*
+  The following zoom:1 rule is specifically for IE6 + IE7.
+  Move to separate stylesheet if invalid CSS is a problem.
+*/
+
+.clearfix,
+.container_24 {
+  zoom: 1;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* line 1, /home/kabita/workspace/ror/FindMe/app/assets/stylesheets/style.css.scss */
+.container {
+  margin: auto;
+  width: 1200px;
+  height: 100%;
+  /* Form */
+}
+/* line 5, /home/kabita/workspace/ror/FindMe/app/assets/stylesheets/style.css.scss */
+.container footer {
+  margin-top: 20px;
+}
+/* line 10, /home/kabita/workspace/ror/FindMe/app/assets/stylesheets/style.css.scss */
+.container * {
+  margin: 0;
+  padding: 0;
+}
+/* line 15, /home/kabita/workspace/ror/FindMe/app/assets/stylesheets/style.css.scss */
+.container body {
+  font-size: 62.5%;
+  font-family: Helvetica, sans-serif;
+}
+/* line 20, /home/kabita/workspace/ror/FindMe/app/assets/stylesheets/style.css.scss */
+.container #page-wrap {
+  width: 660px;
+  background: white;
+  padding: 20px 50px 20px 50px;
+  margin: 20px auto;
+  min-height: 500px;
+  height: auto !important;
+  height: 500px;
+}
+/* line 30, /home/kabita/workspace/ror/FindMe/app/assets/stylesheets/style.css.scss */
+.container #contact-area {
+  width: 600px;
+  margin-top: 25px;
+  margin-left: 90px;
+}
+/* line 34, /home/kabita/workspace/ror/FindMe/app/assets/stylesheets/style.css.scss */
+.container #contact-area .zip-width {
+  width: auto;
+}
+/* line 37, /home/kabita/workspace/ror/FindMe/app/assets/stylesheets/style.css.scss */
+.container #contact-area h2 {
+  text-align: center;
+  display: block;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  background: #f4f4f4;
+  margin-bottom: 20px;
+}
+/* line 45, /home/kabita/workspace/ror/FindMe/app/assets/stylesheets/style.css.scss */
+.container #contact-area .signin-button {
+  text-align: center;
+}
+/* line 47, /home/kabita/workspace/ror/FindMe/app/assets/stylesheets/style.css.scss */
+.container #contact-area .signin-button .submit-width {
+  width: 150px;
+}
+/* line 51, /home/kabita/workspace/ror/FindMe/app/assets/stylesheets/style.css.scss */
+.container #contact-area .create-button {
+  display: block;
+  width: 100px;
+  float: right;
+}
+/* line 58, /home/kabita/workspace/ror/FindMe/app/assets/stylesheets/style.css.scss */
+.container #contact-area input, .container #contact-area textarea, .container #contact-area select {
+  padding: 5px;
+  width: 471px;
+  font-family: Helvetica, sans-serif;
+  font-size: 12px;
+  margin: 0px 0px 10px 0px;
+  border: 2px solid #ccc;
+}
+/* line 67, /home/kabita/workspace/ror/FindMe/app/assets/stylesheets/style.css.scss */
+.container #contact-area textarea {
+  height: 90px;
+}
+/* line 71, /home/kabita/workspace/ror/FindMe/app/assets/stylesheets/style.css.scss */
+.container #contact-area select {
+  width: 200px;
+}
+/* line 75, /home/kabita/workspace/ror/FindMe/app/assets/stylesheets/style.css.scss */
+.container #contact-area textarea:focus, .container #contact-area input:focus {
+  border: 2px solid #900;
+}
+/* line 79, /home/kabita/workspace/ror/FindMe/app/assets/stylesheets/style.css.scss */
+.container #contact-area input.submit-button {
+  width: 100px;
+  float: right;
+}
+/* line 84, /home/kabita/workspace/ror/FindMe/app/assets/stylesheets/style.css.scss */
+.container label {
+  float: left;
+  text-align: right;
+  margin-right: 15px;
+  width: 100px;
+  padding-top: 5px;
+  font-size: 16px;
+}
+
+/* line 93, /home/kabita/workspace/ror/FindMe/app/assets/stylesheets/style.css.scss */
+.vertical-center {
+  position: relative;
+  top: 30%;
+}
+/* line 96, /home/kabita/workspace/ror/FindMe/app/assets/stylesheets/style.css.scss */
+.vertical-center a {
+  text-decoration: none;
+}
+/* line 98, /home/kabita/workspace/ror/FindMe/app/assets/stylesheets/style.css.scss */
+.vertical-center a:hover {
+  text-decoration: underline;
+  color: purple;
+}
+
+/* line 104, /home/kabita/workspace/ror/FindMe/app/assets/stylesheets/style.css.scss */
+.topbar {
+  background: yellowgreen;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+  height: 40px;
+}
+
+/* line 110, /home/kabita/workspace/ror/FindMe/app/assets/stylesheets/style.css.scss */
+.leftbar {
+  float: left;
+  width: 19%;
+  background: orange;
+  border-left: 1px #ccc solid;
+  border-right: 1px #ccc solid;
+  margin-right: 18px;
+  height: 650px;
+}
+/* line 118, /home/kabita/workspace/ror/FindMe/app/assets/stylesheets/style.css.scss */
+.leftbar ul {
+  margin-top: 20px;
+  text-align: center;
+}
+/* line 121, /home/kabita/workspace/ror/FindMe/app/assets/stylesheets/style.css.scss */
+.leftbar ul li {
+  margin-bottom: 15px;
+}
+/* line 125, /home/kabita/workspace/ror/FindMe/app/assets/stylesheets/style.css.scss */
+.leftbar a {
+  text-decoration: none;
+}
+/* line 127, /home/kabita/workspace/ror/FindMe/app/assets/stylesheets/style.css.scss */
+.leftbar a:hover {
+  text-decoration: underline;
+  color: purple;
+}
+/* line 132, /home/kabita/workspace/ror/FindMe/app/assets/stylesheets/style.css.scss */
+.leftbar h1 {
+  font-size: 32px;
+  text-align: center;
+}
+/* line 136, /home/kabita/workspace/ror/FindMe/app/assets/stylesheets/style.css.scss */
+.leftbar form {
+  margin-top: 40px;
+  text-align: center;
+}
+/* line 139, /home/kabita/workspace/ror/FindMe/app/assets/stylesheets/style.css.scss */
+.leftbar form select {
+  width: 95px;
+}
+/* line 142, /home/kabita/workspace/ror/FindMe/app/assets/stylesheets/style.css.scss */
+.leftbar form input {
+  width: 130px;
+}
+
+/* line 148, /home/kabita/workspace/ror/FindMe/app/assets/stylesheets/style.css.scss */
+.center-column {
+  display: inline-block;
+  width: 58%;
+}
+/* line 151, /home/kabita/workspace/ror/FindMe/app/assets/stylesheets/style.css.scss */
+.center-column .center-one {
+  background: yellowgreen;
+  width: 30%;
+  float: left;
+  margin-right: 25px;
+}
+/* line 156, /home/kabita/workspace/ror/FindMe/app/assets/stylesheets/style.css.scss */
+.center-column .center-one table {
+  width: 60%;
+  margin-bottom: 15px;
+}
+/* line 160, /home/kabita/workspace/ror/FindMe/app/assets/stylesheets/style.css.scss */
+.center-column .center-one .left-list {
+  float: left;
+  width: 100%;
+}
+/* line 163, /home/kabita/workspace/ror/FindMe/app/assets/stylesheets/style.css.scss */
+.center-column .center-one .left-list li {
+  border-bottom: 1px #f4f4f4 solid;
+  width: 50px;
+}
+/* line 168, /home/kabita/workspace/ror/FindMe/app/assets/stylesheets/style.css.scss */
+.center-column .center-one .right-list {
+  float: right;
+  width: 50%;
+}
+/* line 171, /home/kabita/workspace/ror/FindMe/app/assets/stylesheets/style.css.scss */
+.center-column .center-one .right-list li {
+  border-bottom: 1px #f4f4f4 solid;
+  width: 50px;
+}
+/* line 176, /home/kabita/workspace/ror/FindMe/app/assets/stylesheets/style.css.scss */
+.center-column .center-one .table-header {
+  text-align: center;
+  background: DarkGoldenRod;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 2px 5px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+/* line 185, /home/kabita/workspace/ror/FindMe/app/assets/stylesheets/style.css.scss */
+.center-column .center-one li {
+  border-bottom: 1px #f4f4f4 solid;
+}
+/* line 189, /home/kabita/workspace/ror/FindMe/app/assets/stylesheets/style.css.scss */
+.center-column .center-two {
+  background: yellowgreen;
+  width: 30%;
+  display: inline-table;
+}
+/* line 193, /home/kabita/workspace/ror/FindMe/app/assets/stylesheets/style.css.scss */
+.center-column .center-two table {
+  width: 60%;
+  margin-bottom: 15px;
+}
+/* line 197, /home/kabita/workspace/ror/FindMe/app/assets/stylesheets/style.css.scss */
+.center-column .center-two .left-list {
+  float: left;
+  width: 100%;
+}
+/* line 200, /home/kabita/workspace/ror/FindMe/app/assets/stylesheets/style.css.scss */
+.center-column .center-two .left-list li {
+  border-bottom: 1px #f4f4f4 solid;
+  width: 50px;
+}
+/* line 205, /home/kabita/workspace/ror/FindMe/app/assets/stylesheets/style.css.scss */
+.center-column .center-two .right-list {
+  float: right;
+  width: 50%;
+}
+/* line 208, /home/kabita/workspace/ror/FindMe/app/assets/stylesheets/style.css.scss */
+.center-column .center-two .right-list li {
+  border-bottom: 1px #f4f4f4 solid;
+  width: 50px;
+}
+/* line 213, /home/kabita/workspace/ror/FindMe/app/assets/stylesheets/style.css.scss */
+.center-column .center-two .table-header {
+  text-align: center;
+  background: DarkGoldenRod;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 2px 5px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+/* line 222, /home/kabita/workspace/ror/FindMe/app/assets/stylesheets/style.css.scss */
+.center-column .center-two li {
+  border-bottom: 1px #f4f4f4 solid;
+}
+/* line 226, /home/kabita/workspace/ror/FindMe/app/assets/stylesheets/style.css.scss */
+.center-column .center-three {
+  background: yellowgreen;
+  width: 30%;
+  float: right;
+}
+/* line 230, /home/kabita/workspace/ror/FindMe/app/assets/stylesheets/style.css.scss */
+.center-column .center-three table {
+  width: 60%;
+}
+/* line 233, /home/kabita/workspace/ror/FindMe/app/assets/stylesheets/style.css.scss */
+.center-column .center-three .table-header {
+  text-align: center;
+  background: DarkGoldenRod;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 2px 5px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+/* line 242, /home/kabita/workspace/ror/FindMe/app/assets/stylesheets/style.css.scss */
+.center-column .center-three li {
+  border-bottom: 1px #f4f4f4 solid;
+}
+
+/* line 248, /home/kabita/workspace/ror/FindMe/app/assets/stylesheets/style.css.scss */
+.rightbar {
+  float: right;
+  width: 19%;
+  background: orange;
+  border-left: 1px #ccc solid;
+  border-right: 1px #ccc solid;
+  height: 650px;
+}
+/* line 255, /home/kabita/workspace/ror/FindMe/app/assets/stylesheets/style.css.scss */
+.rightbar li {
+  text-align: center;
+  margin-top: 15px;
+}
+/* line 259, /home/kabita/workspace/ror/FindMe/app/assets/stylesheets/style.css.scss */
+.rightbar .rightbar-top {
+  margin-top: 40px;
+}
+
+/* line 263, /home/kabita/workspace/ror/FindMe/app/assets/stylesheets/style.css.scss */
+.listing-header {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* line 270, /home/kabita/workspace/ror/FindMe/app/assets/stylesheets/style.css.scss */
+.box {
+  display: block;
+  background: #fafafa;
+  border: 1px solid #ccc;
+  border-radius: .25em;
+  width: 300px;
+  height: 50px;
+  margin-left: 10px;
+  float: right;
+}
+
+/* line 280, /home/kabita/workspace/ror/FindMe/app/assets/stylesheets/style.css.scss */
+.row div {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* line 286, /home/kabita/workspace/ror/FindMe/app/assets/stylesheets/style.css.scss */
+.row div {
+  width: 100px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/* line 291, /home/kabita/workspace/ror/FindMe/app/assets/stylesheets/style.css.scss */
+.newest {
+  padding: 5px 0;
+  display: block;
+  border-radius: 5px;
+  border: 1px #ccc solid;
+}
+
+/* line 297, /home/kabita/workspace/ror/FindMe/app/assets/stylesheets/style.css.scss */
+.oldest {
+  padding: 5px 0;
+  display: block;
+  border-radius: 5px;
+  border: 1px #ccc solid;
+}
+
+/* line 303, /home/kabita/workspace/ror/FindMe/app/assets/stylesheets/style.css.scss */
+.highest-price {
+  padding: 5px 0;
+  display: block;
+  border-radius: 5px;
+  border: 1px #ccc solid;
+}
+
+/* line 309, /home/kabita/workspace/ror/FindMe/app/assets/stylesheets/style.css.scss */
+.lowest-price {
+  padding: 5px 0;
+  display: block;
+  border-radius: 5px;
+  border: 1px #ccc solid;
+}
+
+/* line 315, /home/kabita/workspace/ror/FindMe/app/assets/stylesheets/style.css.scss */
+.sort-row div {
+  display: inline;
+  vertical-align: baseline;
+}
+/* line 318, /home/kabita/workspace/ror/FindMe/app/assets/stylesheets/style.css.scss */
+.sort-row div .search-sort {
+  display: block;
+  border: 1px solid #ccc;
+  margin-bottom: 30px;
+  width: 100px;
+}
+
+/* line 327, /home/kabita/workspace/ror/FindMe/app/assets/stylesheets/style.css.scss */
+.list-margin span {
+  color: gray;
+  font-size: 14px;
+  margin-right: 20px;
+}
+/* line 332, /home/kabita/workspace/ror/FindMe/app/assets/stylesheets/style.css.scss */
+.list-margin li {
+  margin-bottom: 20px;
+}
+
+/* line 337, /home/kabita/workspace/ror/FindMe/app/assets/stylesheets/style.css.scss */
+.alert-box {
+  color: #555;
+  border-radius: 10px;
+  font-family: Tahoma,Geneva,Arial,sans-serif;
+  font-size: 11px;
+  padding: 10px 10px 10px 36px;
+  margin: 10px;
+}
+/* line 343, /home/kabita/workspace/ror/FindMe/app/assets/stylesheets/style.css.scss */
+.alert-box span {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* line 348, /home/kabita/workspace/ror/FindMe/app/assets/stylesheets/style.css.scss */
+.danger {
+  background: #ffecec url("images/error.png") no-repeat 10px 50%;
+  border: 1px solid #f5aca6;
+}
+
+/* line 352, /home/kabita/workspace/ror/FindMe/app/assets/stylesheets/style.css.scss */
+.success {
+  background: #e9ffd9 url("images/success.png") no-repeat 10px 50%;
+  border: 1px solid #a6ca8a;
+}
+
+/* line 356, /home/kabita/workspace/ror/FindMe/app/assets/stylesheets/style.css.scss */
+.warning {
+  background: #fff8c4 url("images/warning.png") no-repeat 10px 50%;
+  border: 1px solid #f2c779;
+}
+
+/* line 360, /home/kabita/workspace/ror/FindMe/app/assets/stylesheets/style.css.scss */
+.notice {
+  background: #e3f7fc url("images/notice.png") no-repeat 10px 50%;
+  border: 1px solid #8ed9f6;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+
+
+ */
+
+/* line 13, /home/kabita/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/slide-down-alerts-rails-0.0.2/vendor/assets/stylesheets/jbar.colors.css.scss */
+.notification {
+  background-color: #FFF;
+  color: #1E90FF;
+  border-bottom: 1px solid #EBEBEB;
+}
+
+/* line 20, /home/kabita/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/slide-down-alerts-rails-0.0.2/vendor/assets/stylesheets/jbar.colors.css.scss */
+.notification.warning {
+  background-color: #FCF8E3;
+  color: #C09853;
+  border-bottom: 1px solid #FBEED5;
+}
+
+/* line 27, /home/kabita/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/slide-down-alerts-rails-0.0.2/vendor/assets/stylesheets/jbar.colors.css.scss */
+.notification.error {
+  background-color: #F2DEDE;
+  color: #B94A48;
+  border-bottom: 1px solid #EED3D7;
+}
+/* line 1, /home/kabita/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/slide-down-alerts-rails-0.0.2/vendor/assets/stylesheets/jbar.css.scss */
+.jbar {
+  width: 100%;
+  position: fixed;
+  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=90);
+  opacity: 0.9;
+  -moz-opacity: 0.9;
+  text-align: center;
+  left: 0px;
+  z-index: 9999999;
+  margin: 0px;
+  padding: .5em;
+}
+
+/* line 13, /home/kabita/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/slide-down-alerts-rails-0.0.2/vendor/assets/stylesheets/jbar.css.scss */
+.jbar-top {
+  top: 0px;
+}
+
+/* line 16, /home/kabita/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/slide-down-alerts-rails-0.0.2/vendor/assets/stylesheets/jbar.css.scss */
+.jbar-bottom {
+  bottom: 0px;
+  color: #777;
+}
+
+/* line 20, /home/kabita/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/slide-down-alerts-rails-0.0.2/vendor/assets/stylesheets/jbar.css.scss */
+.jbar-content {
+  line-height: 46px;
+  font-size: 18px;
+  font-family: 'Lucida Grande',sans-serif;
+}
+
+/* line 25, /home/kabita/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/slide-down-alerts-rails-0.0.2/vendor/assets/stylesheets/jbar.css.scss */
+a.jbar-cross {
+  position: absolute;
+  width: 31px;
+  height: 31px;
+  background: transparent url(/assets/cross.png) no-repeat top left;
+  cursor: pointer;
+  right: 10px;
+}
+
+/* line 33, /home/kabita/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/slide-down-alerts-rails-0.0.2/vendor/assets/stylesheets/jbar.css.scss */
+a.jbar-cross:hover {
+  background-image: url(/assets/cross_hover.png);
+}
+
+/* line 36, /home/kabita/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/slide-down-alerts-rails-0.0.2/vendor/assets/stylesheets/jbar.css.scss */
+.jbar-top a.jbar-cross {
+  top: 8px;
+}
+
+/* line 39, /home/kabita/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/slide-down-alerts-rails-0.0.2/vendor/assets/stylesheets/jbar.css.scss */
+.jbar-bottom a.jbar-cross {
+  bottom: 8px;
+}

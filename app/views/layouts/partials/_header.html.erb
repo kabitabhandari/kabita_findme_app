@@ -1,0 +1,30 @@
+
+  <div class="leftbar">
+  <%#  <a href="#"><h1>FindMe</h1></a> %>
+  <h1>  <%= link_to 'FindMe', categories_path %></h1>
+    <ul>
+      <%#<a href="#">post to classifieds</a> %>
+    <li>  <%= link_to 'post to classifieds', new_listing_path %></li>
+      <% if user_signed_in? %>
+          <li><%= link_to 'My Accout', edit_user_registration_path %></li>
+            <li><%= link_to 'My Listings', mylistings_path %></li>
+          <li><%= link_to 'Log Out', destroy_user_session_path, method: :delete %></li>
+      <% else %>
+          <li><%= link_to 'Log In', new_user_session_path %></li>
+          <li><%= link_to 'Sign Up', new_user_registration_path %></li>
+      <% end %>
+    </ul>
+
+    <%= form_tag search_listings_path, method: :get do |f| %>
+        <p>Search </p>
+        <%= text_field_tag :search, nil, placeholder: 'search' %>
+        <%= text_field_tag :location, nil, placeholder: 'nearby' %>
+        <%= select_tag :category, options_for_select(Category.all.map{|c|[c.name, c.id]}) %>
+        
+        <%= submit_tag 'Go' %>
+
+
+<% end %>
+
+
+  </div>

@@ -1,0 +1,102 @@
+<style>
+ body {
+    background-color: grey;
+ }
+</style>
+  <div class="center-column">
+    <div class="center-one">
+      <table>
+        <tr>
+          <th class="table-header"><%= link_to 'societal', category_path(@categories[0]) %></th>
+        </tr>
+        <tr>
+          <td>
+            <% @societal.subcategories.each do |subcategory| %>
+            <ul class="left-list">
+              <li><%= link_to subcategory.name, category_subcategory_path(@societal, subcategory)%> </li>
+              <%#<li>test</li> %>
+              <%#<li>test</li> %>
+              <%#<li>test</li> %>
+            <%#<li>test</li> %>
+            </ul>
+            <% end %>
+          </td>
+        </tr>
+      </table>
+      <table>
+        <tr>
+          <th class="table-header"><%= link_to 'housing', category_path(@housing) %> </th>
+        </tr>
+        <tr>
+          <td>
+            <% @housing.subcategories.each do|subcategory| %>
+            <ul>
+              <li><%= link_to subcategory.name, category_subcategory_path(@housing, @housing.subcategories)%></li>
+            </ul>
+            <% end %>
+          </td>
+        </tr>
+      </table>
+      <table>
+        <tr>
+          <th class="table-header"><%= link_to 'services', category_path(@services) %></th>
+        </tr>
+        <tr>
+          <td>
+            <% @services.subcategories.each do|subcategory| %>
+            <ul class="left-list">
+              <li><%= link_to subcategory.name, category_subcategory_path(@services, subcategory) %> </li>
+            </ul>
+            <% end %>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="center-two">
+      <table>
+        <tr>
+          <th class="table-header"><%= link_to 'onsale' , category_path(@onsale)%></th>
+        </tr>
+        <tr>
+          <td>
+            <% @onsale.subcategories.each do|subcategory| %>
+            <ul>
+              <li><%= link_to subcategory.name, category_subcategory_path(@onsale, subcategory)%></li>
+            </ul>
+            <% end %>
+          </td>
+        </tr>
+      </table>
+      <table>
+        <tr>
+          <th class="table-header"><%= link_to 'works' , category_path(@works)%></th>
+        </tr>
+        <tr>
+          <td>
+            <% @works.subcategories.each do|subcategory| %>
+            <ul class="left-list">
+              <li><%= link_to subcategory.name, category_subcategory_path(@works, subcategory)%></li>
+            </ul>
+            <%end%>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="center-three">
+      <table>
+        <tr>
+          <th class="table-header"><%= link_to 'personal', category_path(@personal) %></th>
+        </tr>
+        <tr>
+          <td>
+            <% @personal.subcategories.each do |subcategory|%>
+            <ul>
+              <li><%= link_to subcategory.name, category_subcategory_path(@personal , subcategory) %></li>
+
+            </ul>
+            <% end %>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>

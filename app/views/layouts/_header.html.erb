@@ -1,0 +1,32 @@
+<%
+=begin %>
+
+
+  <div class="leftbar">
+<%#    <a href="#"><h1>FindMe</h1></a> %>
+    <%= link_to 'FindMe', category_path %>
+    <ul>
+      <%#<a href="#">post to classifieds</a> %>
+      <%= link_to 'post to classifieds', new_listing_path %>
+      <li>my account</li>
+    </ul>
+    <form>
+      <p>search FindMe</p>
+      <input type="text" name="firstname" placeholder="search" size="20">
+      <br>
+      <input type="text" name="firstname" placeholder="where" size="20">
+      <br>
+      <select>
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="mercedes">Mercedes</option>
+        <option value="audi">Audi</option>
+      </select>
+      <button type="button">>
+      </button>
+    </form>
+  </div>
+
+
+<%
+=end %>
